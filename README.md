@@ -1,16 +1,36 @@
 # Lenovo-M710q-QNCT-Hackintosh
-Lenovo-M710q-QNCT Hackintosh
+EFI for Lenovo-M710q-QNCT with OpenCore 0.6.8 bootloader
 
-## 电脑配置
+### Computer Spec:
 
-|   规格   |                           详细信息                           |
-| :------: | :----------------------------------------------------------: |
-| 电脑型号 |                       联想Lenovo M710q                       |
-| 操作系统 |                        macOS Big Sur 11.2.3                  |
-|  处理器  |                    英特尔 酷睿 i7 - 8850H(ES)                |
-|   内存   |                             8GB                              |
-|  硬盘1   |                          WD SN520 512GB                      |
-|   显卡   |                       Intel UHD Graphics 630                 |
-|  显示器  |                         27寸 4K@60Hz                         |
-|   声卡   |                        Realtek ALC294                        |
-|   网卡   |                          Intel AX200                         |
+| Component        | Specifications                         |
+| ---------------- | ---------------------------------------|
+| CPU              | Intel® Core™ i7-8850H(ES)              |
+| iGPU             | Intel® UHD Graphics 630                |
+| RAM              | 2 * 4GB DDR4 2400Mhz                   |
+| NVMe             | WD SN520 512GB                         |
+| LAN              | Intel I219-V                           |
+| Audio            | Realtek ALC294                         |
+| WiFi + Bluetooth | Intel® Wi-Fi 6 AX200 + Bluetooth 5.2   |
+| SMBIOS           | MacMini8,1                             |
+| BootLoader       | OpenCore 0.6.8                         |
+
+### What works:
+
+- [x] Intel Intel® UHD Graphics 630 iGPU DP Output
+- [x] ALC294 Internal Speakers
+- [x] ALC294 DP Audio Output
+- [x] All USB Ports
+- [x] Intel I219-V
+- [x] Intel® Wi-Fi 6 AX200 + Bluetooth
+- [x] NVRAM
+
+### BIOS Settings:
+editing...
+
+## Credits
+
+- [Apple](https://apple.com) for macOS;
+- [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
+- [Dortania](https://github.com/dortania) for great and detailed guides.
+- [zhangcheng142](https://github.com/zhangcheng142) for some SSDT.
