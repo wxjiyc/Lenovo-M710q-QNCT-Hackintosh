@@ -33,4 +33,4 @@ editing...
 - [Apple](https://apple.com) for macOS;
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
 - [Dortania](https://github.com/dortania) for great and detailed guides.
-- [zhangcheng142](https://github.com/zhangcheng142) for some SSDT.
+- [zhangcheng142](https://github.com/zhangcheng142) for some SSDTs.
