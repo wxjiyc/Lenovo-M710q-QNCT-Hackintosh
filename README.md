@@ -7,13 +7,13 @@ EFI for Lenovo-M710q-QNCT with OpenCore 0.6.8 bootloader
 | ---------------- | ---------------------------------------|
 | CPU              | Intel® Core™ i7-8850H(ES)              |
 | iGPU             | Intel® UHD Graphics 630                |
-| RAM              | 2 * 4GB DDR4 2400Mhz                   |
+| RAM              | 2 * 8GB DDR4 2400Mhz                   |
 | NVMe             | WD SN520 512GB                         |
 | LAN              | Intel I219-V                           |
 | Audio            | Realtek ALC294                         |
 | WiFi + Bluetooth | Intel® Wi-Fi 6 AX200 + Bluetooth 5.2   |
 | SMBIOS           | MacMini8,1                             |
-| BootLoader       | OpenCore 0.6.8                         |
+| BootLoader       | OpenCore 0.6.9                         |
 
 ### What works:
 
