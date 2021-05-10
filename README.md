@@ -32,11 +32,13 @@ Update to M1AKT4FA
 #DVMT 64M
 
 GRUB> setup_var 0x7AC 0x2
+
 #CFG Lock
 
 GRUB> setup_var 0x503 0x0
 
 Disable:
+
 CSM
 
 VT-d
