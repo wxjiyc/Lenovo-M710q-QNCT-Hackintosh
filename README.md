@@ -1,5 +1,5 @@
 # Lenovo-M710q-QNCT-Hackintosh
-EFI for Lenovo-M710q-QNCT with OpenCore 0.6.8 bootloader
+EFI for Lenovo-M710q-QNCT with OpenCore 0.6.9 bootloader
 
 ### Computer Spec:
 
