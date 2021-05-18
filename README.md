@@ -51,6 +51,8 @@ VMX
 
 UEFI only
 
+说人话就是要根据D大教程合成刷入最新版的BIOS，不然安装会报多线程的错误。在BIOS中必须完全关闭CSM，开启纯UEFI启动，开启VMM虚拟化，关闭VT-d，SGX可选择性关闭，然后U盘上放入GRUB引导，进入GRUB命令行输入setup_var 0x7AC 0x2回车，setup_var 0x503 0x0回车重启，这样就分别解锁了DVMT和CFG Lock，这样就可以顺利使用本引导了。
+
 ## Credits
 
 - [Apple](https://apple.com) for macOS.
