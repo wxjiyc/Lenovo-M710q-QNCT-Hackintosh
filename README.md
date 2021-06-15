@@ -5,13 +5,13 @@ EFI for Lenovo-M710q-QNCT with OpenCore 0.6.9 bootloader
 
 | Component        | Specifications                         |
 | ---------------- | ---------------------------------------|
-| CPU              | Intel® Core™ i7-8850H(ES)              |
+| CPU              | Intel® Core™ i7-8850H(ES) (QNCT)       |
 | iGPU             | Intel® UHD Graphics 630                |
 | RAM              | 2 * 8GB DDR4 2400Mhz                   |
-| NVMe             | WD SN520 512GB                         |
+| NVMe             | Kioxia RC10 512GB                      |
 | LAN              | Intel I219-V                           |
 | Audio            | Realtek ALC294                         |
-| WiFi + Bluetooth | Intel® Wi-Fi 6 AX200 + Bluetooth 5.2   |
+| WiFi + Bluetooth | Intel Wi-Fi 7265AC + Bluetooth 4.2    |
 | SMBIOS           | MacMini8,1                             |
 | BootLoader       | OpenCore 0.6.9                         |
 
@@ -22,36 +22,34 @@ EFI for Lenovo-M710q-QNCT with OpenCore 0.6.9 bootloader
 - [x] ALC294 DP Audio Output
 - [x] All USB Ports
 - [x] Intel I219-V
-- [x] Intel® Wi-Fi 6 AX200 + Bluetooth
+- [x] Intel Wi-Fi & Bluetooth
 - [x] NVRAM
 
 ### BIOS Settings:
 
-Update to M1AKT4FA
+* Update Bios to M1AKT4FA  
+* Disable:  
+CSM  
+VT-d  
+SGX  
+* Enable:  
+VMX  
+UEFI only  
+* Boot this OpenCore
+* Chose UEFI Shell to boot
+* Run code to ser 64M DVMT and disable CFG Lock:
+```
+setup_var   
+setup_var 0x7AC 0x2  
+setup_var 0x503 0x0  
+```
+* Reboot to install macOS
 
-#DVMT 64M
-
-GRUB> setup_var 0x7AC 0x2
-
-#CFG Lock
-
-GRUB> setup_var 0x503 0x0
-
-Disable:
-
-CSM
-
-VT-d
-
-SGX
-
-Enable:
-
-VMX
-
-UEFI only
-
-说人话就是要根据D大教程合成刷入最新版的BIOS，不然安装会报多线程的错误。在BIOS中必须完全关闭CSM，开启纯UEFI启动，开启VMM虚拟化，关闭VT-d，SGX可选择性关闭，然后U盘上放入GRUB引导，进入GRUB命令行输入setup_var 0x7AC 0x2回车，setup_var 0x503 0x0回车重启，这样就分别解锁了DVMT和CFG Lock，这样就可以顺利使用本引导了。
+#### 说人话
+更新bios到最新，不然安装会报多线程的错误（不懂可以看[BV1Ab4y1Z781](https://www.bilibili.com/video/BV1Ab4y1Z781)）  
+在BIOS中必须完全关闭CSM，开启纯UEFI启动，开启VMM虚拟化，关闭VT-d，SGX可选择性关闭  
+启动这个OpenCore，选UEFI Shell进去执行上面Run code的几个命令  
+然后重启安装macOS
 
 ## Credits
 
