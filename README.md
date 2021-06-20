@@ -8,7 +8,7 @@ Test for macOS 11.4
 | ---------------- | ---------------------------------------|
 | CPU              | Intel® Core™ i7-8850H(ES) (QNCT)       |
 | iGPU             | Intel® UHD Graphics 630                |
-| RAM              | 2 * 8GB DDR4 2400Mhz                   |
+| RAM              | 2 * 8GB DDR4 2666Mhz                   |
 | NVMe             | Kioxia RC10 512GB / WD SN520 512GB     |
 | LAN              | Intel I219-V                           |
 | Audio            | Realtek ALC294                         |
