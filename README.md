@@ -44,6 +44,7 @@ setup_var 0x7AC 0x2
 更新bios到最新，不然安装会报多线程的错误（不懂可以看[BV1Ab4y1Z781](https://www.bilibili.com/video/BV1Ab4y1Z781)）  
 在BIOS中必须完全关闭CSM，然后启动这个OpenCore，在引导主题界面按下空格，进入SetupVar输入setup_var 0x7AC 0x2回车
 然后重启安装macOS
+0.7.0版本中加入了引导主题和开机声音，4K显示器显示主题可能会有黑边，把config.plist里NVRAM中的UIScale改为02即可
 
 ## Credits
 
