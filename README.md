@@ -1,6 +1,6 @@
 # Lenovo-M710q-QNCT-Hackintosh
-EFI for Lenovo-M710q-QNCT with OpenCore 0.6.9 bootloader  
-Test for macOS 11.4
+EFI for Lenovo-M710q-QNCT with OpenCore 0.7.0 bootloader  
+Test for macOS 12.0
 
 ### Computer Spec:
 
@@ -14,7 +14,7 @@ Test for macOS 11.4
 | Audio            | Realtek ALC294                         |
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX200 / 7265AC           |
 | SMBIOS           | MacMini8,1                             |
-| BootLoader       | OpenCore 0.6.9                         |
+| BootLoader       | OpenCore 0.7.0                         |
 
 ### What works:
 
@@ -29,28 +29,20 @@ Test for macOS 11.4
 
 ### BIOS Settings:
 
-* Update Bios to M1AKT4FA  
+* Update Bios to M1AKT50A  
 * Disable:  
-CSM  
-VT-d  
-SGX  
-* Enable:  
-VMX  
-UEFI only  
+CSM   
 * Boot this OpenCore
 * Chose UEFI Shell to boot
-* Run code to ser 64M DVMT and disable CFG Lock:
+* Run code to set 64M DVMT:
 ```
-setup_var   
-setup_var 0x7AC 0x2  
-setup_var 0x503 0x0  
+setup_var 0x7AC 0x2   
 ```
 * Reboot to install macOS
 
 #### 说人话
 更新bios到最新，不然安装会报多线程的错误（不懂可以看[BV1Ab4y1Z781](https://www.bilibili.com/video/BV1Ab4y1Z781)）  
-在BIOS中必须完全关闭CSM，开启纯UEFI启动，开启VMM虚拟化，关闭VT-d，SGX可选择性关闭  
-启动这个OpenCore，选UEFI Shell进去执行上面Run code的几个命令  
+在BIOS中必须完全关闭CSM，然后启动这个OpenCore，在引导主题界面按下空格，进入SetupVar输入setup_var 0x7AC 0x2回车
 然后重启安装macOS
 
 ## Credits
