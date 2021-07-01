@@ -21,7 +21,7 @@ Test for macOS 12.0
 - [x] Intel Intel® UHD Graphics 630 iGPU DP Output
 - [x] ALC294 Internal Speakers
 - [x] ALC294 & DP Audio Output
-- [ ] ALC294 Audio Input
+- [x] ALC294 Audio Input
 - [x] All USB Ports
 - [x] Intel I219-V
 - [x] Intel Wi-Fi & Bluetooth
