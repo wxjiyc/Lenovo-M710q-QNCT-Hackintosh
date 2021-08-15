@@ -39,6 +39,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<false/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -433,6 +435,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<false/>
 			<key>KernelArch</key>
@@ -720,6 +724,8 @@
 			<key>AppleEvent</key>
 			<string>Auto</string>
 			<key>CustomDelays</key>
+			<false/>
+			<key>GraphicsInputMirroring</key>
 			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
