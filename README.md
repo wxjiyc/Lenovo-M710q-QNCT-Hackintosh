@@ -16,7 +16,7 @@ Test for macOS 12.0
 | SMBIOS           | MacMini8,1                             |
 | BootLoader       | OpenCore 0.7.2                         |
 
-### What works:
+### What Works:
 
 - [x] Intel Intel® UHD Graphics 630 iGPU DP Output
 - [x] ALC294 Internal Speakers
