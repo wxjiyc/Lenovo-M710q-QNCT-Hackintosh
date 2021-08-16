@@ -1,5 +1,5 @@
 # Lenovo-M710q-QNCT-Hackintosh
-EFI for Lenovo-M710q-QNCT with OpenCore 0.7.0 bootloader  
+EFI for Lenovo-M710q-QNCT with OpenCore 0.7.2 bootloader  
 Test for macOS 12.0
 
 ### Computer Spec:
