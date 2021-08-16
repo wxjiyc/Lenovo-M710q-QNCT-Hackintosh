@@ -14,7 +14,7 @@ Test for macOS 12.0
 | Audio            | Realtek ALC294                         |
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX200 / 7265AC           |
 | SMBIOS           | MacMini8,1                             |
-| BootLoader       | OpenCore 0.7.0                         |
+| BootLoader       | OpenCore 0.7.2                         |
 
 ### What works:
 
