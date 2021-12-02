@@ -1,6 +1,5 @@
 # Lenovo-M710q-QNCT-Hackintosh
-EFI for Lenovo-M710q-QNCT with OpenCore 0.7.2 bootloader  
-Test for macOS 12.0
+EFI for Lenovo-M710q-QNCT with OpenCore 0.7.5 bootloader  
 
 ### Computer Spec:
 
@@ -14,7 +13,7 @@ Test for macOS 12.0
 | Audio            | Realtek ALC294                         |
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX200 / 7265AC           |
 | SMBIOS           | MacMini8,1                             |
-| BootLoader       | OpenCore 0.7.2                         |
+| BootLoader       | OpenCore 0.7.5                         |
 
 ### What Works:
 
@@ -29,17 +28,11 @@ Test for macOS 12.0
 
 ### BIOS Settings:
 
-* Update BIOS to M1AKT50A  
+* Update BIOS to M1AKT51A
+* Enable:
+
 * Disable:  
-CSM   
-* Boot this OpenCore
-* Press the space bar
-* Choose "SetupVar"
-* Run code to set 64M DVMT:
-```
-setup_var 0x7AC 0x2   
-```
-* Reboot to install macOS
+CSM
 
 #### 说人话
 更新BIOS到最新，不然安装会报多线程的错误（不懂可以看[BV1Ab4y1Z781](https://www.bilibili.com/video/BV1Ab4y1Z781)）  
