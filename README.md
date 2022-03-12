@@ -28,7 +28,7 @@ EFI for Lenovo-M710q-QNCT with OpenCore 0.7.5 bootloader
 
 ### BIOS Settings:
 
-* Update BIOS to M1AKT51A
+* Update BIOS to M1AKT51A, DVMT to 128M
 * Enable:
 
 * Disable:  
